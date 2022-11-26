@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AP Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="box">
+		<form autocomplete="off">
+			<h2>Sign in</h2>
+			<div class="inputBox">
+				<input type="text" required="required" id="username">
+				<span>UserName</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required" id="passwd">
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="#">Forgot Password ?</a>
+				<a href="#">Signup</a>
+			</div>
+			
+			<input type="button" value="Login" onclick="login()">
+			 
+		
+		 
+			
+		</form>
+		<script type="text/javascript">
+		
+	
+			function login() 
+			{ //登陆判断
+
+
+				 
+					let username = document.getElementById('username').value;
+					let passwd = document.getElementById('passwd').value;
+				 
+					 
+
+					if (username == 'Glittering' || username == 'Lucifer'  ){
+							if( passwd == '0823'&&username == 'Glittering')
+							{
+								alert('Glittering logined');
+								window.location.href='sy.html';
+							 
+							} 
+
+							  if( passwd == '0312'&&username == 'Lucifer'){
+								alert('Lucifer logined');
+								window.location.href='sy.html'	;
+							 
+							}
+							 
+					}
+			 
+					if (!(username == 'Glittering' || username == 'Lucifer')  )
+					{
+						alert('user does not exist')
+					}
+				}
+		</script>
+
+	</div>
+
+</body>	
+ 
+</html>
