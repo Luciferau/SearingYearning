@@ -19,3 +19,5 @@
 
 评论系统配置：在Valine申请appid，appkey值填写至index.html第244行和第245行
 
+https://xy520.github.io/SearingYearning/
+
